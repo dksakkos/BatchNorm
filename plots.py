@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 
-def create_plots(histories, key, title, names=('None', 'Custom', 'Default')):
+def create_plots(histories, key, title, names=('Custom', 'Default', 'None')):
     for h in histories:
         plt.plot(h.history[key])
     plt.title(title)
